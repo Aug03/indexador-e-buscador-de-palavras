@@ -5,8 +5,11 @@ Encontre todas as ocorrências de uma palavra em um texto qualquer (em quais lin
 Também obtenha o número de comparações realizadas para a inserção dos elementos em cada um dos índices, para comparar o custo de inserção. 
 
 Lista Ligada:
+
   -Custo de Inserção: O(N^2) pois, é necessário comparar N elementos com M já inseridos, para que não hajam elementos repetidos.
+  
   -Custo de Busca:  O(N) pois, é necessário percorrer todos os elementos da lista, caso o elemento procurado esteja na posição (n-1).
+  
 
 Árvore Binária:
   -Custo de Inserção: O(N.logN) pois, é necessário comparar N elementos com H elementos, sendo H a altura da árvore. Idealmente balanceada, a altura H tem logN elementos.
