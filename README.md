@@ -12,13 +12,13 @@ Além disso, o programa contabiliza as comparações realizadas durante a inser�
 
 ### 1. Lista Ligada
 
-- **Custo de inserção:** \(O(N^2)\). É necessário comparar cada novo elemento com os elementos já inseridos para evitar duplicatas.
-- **Custo de busca:** \(O(N)\). No pior caso, é necessário percorrer toda a lista para encontrar o elemento procurado.
+- **Custo de inserção:** O(N^2). É necessário comparar cada novo elemento com os elementos já inseridos para evitar duplicatas.
+- **Custo de busca:** O(N). No pior caso, é necessário percorrer toda a lista para encontrar o elemento procurado.
 
 ### 2. Árvore Binária
 
-- **Custo de inserção:** \(O(N \log N)\), considerando uma árvore aproximadamente balanceada. Cada inserção exige, em média, \(O(\log N)\) comparações.
-- **Custo de busca:** \(O(\log N)\), considerando uma árvore balanceada. O número de comparações é proporcional à altura da árvore.
+- **Custo de inserção:** O(N.log N), considerando uma árvore aproximadamente balanceada. Cada inserção exige, em média, O(log N) comparações.
+- **Custo de busca:** O(log N), considerando uma árvore balanceada. O número de comparações é proporcional à altura da árvore.
 
 ## Compilação e Execução
 
