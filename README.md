@@ -1,47 +1,58 @@
-# indexador-e-buscador-de-palavras
-### *É um indexador e um buscador de palavras escrito em C.*
+# Indexador e Buscador de Palavras
 
-Encontre todas as ocorrências de uma palavra em um texto qualquer (em quais linhas ela apareceu e quantas vezes), além do número de comparações feitas para buscá-la, usando duas estruturas de dados diferentes para construir o índice remissivo: Lista ligada ou Árvore Binária. É possível, assim, testar empiricamente sua complexidade assintótica.
-Também obtenha o número de comparações realizadas para a inserção dos elementos em cada um dos índices, para comparar o custo de inserção. 
+Um indexador e buscador de palavras desenvolvido em **C**.
 
-Lista Ligada:
+Encontre todas as ocorrências de uma palavra em um texto qualquer, identificando as linhas em que ela aparece e sua frequência. O programa também contabiliza o número de comparações realizadas durante as buscas.
 
-  -Custo de Inserção: O(N^2) pois, é necessário comparar N elementos com M já inseridos, para que não hajam elementos repetidos.
-  
-  -Custo de Busca:  O(N) pois, é necessário percorrer todos os elementos da lista, caso o elemento procurado esteja na posição (n-1).
-  
+O índice remissivo pode ser construído utilizando duas estruturas de dados diferentes: **Lista Ligada** ou **Árvore Binária**. Dessa forma, é possível comparar empiricamente o custo das operações e observar suas respectivas complexidades assintóticas.
 
-Árvore Binária:
+Além disso, o programa contabiliza as comparações realizadas durante a inserção dos elementos em cada estrutura.
 
+## Complexidade das Estruturas de Dados
 
-  -Custo de Inserção: O(N.logN) pois, é necessário comparar N elementos com H elementos, sendo H a altura da árvore. Idealmente balanceada, a altura H tem logN elementos.
+### 1. Lista Ligada
 
+- **Custo de inserção:** \(O(N^2)\). É necessário comparar cada novo elemento com os elementos já inseridos para evitar duplicatas.
+- **Custo de busca:** \(O(N)\). No pior caso, é necessário percorrer toda a lista para encontrar o elemento procurado.
 
-  -Custo de Busca:  O(logN) pois, o número de comparações é igual à altura da árvore, e idealmente, H = logN.
+### 2. Árvore Binária
 
+- **Custo de inserção:** \(O(N \log N)\), considerando uma árvore aproximadamente balanceada. Cada inserção exige, em média, \(O(\log N)\) comparações.
+- **Custo de busca:** \(O(\log N)\), considerando uma árvore balanceada. O número de comparações é proporcional à altura da árvore.
 
-###*Como compilar e rodar*
+## Compilação e Execução
 
-Compilação com lista:
+O projeto permite escolher qual estrutura de dados será utilizada durante a compilação.
 
-'gcc -Wall -o ep main2.c texto2.c indice_lista2.c'
+### Lista Ligada
 
+Compile utilizando:
 
-Compilação com árvore:
+```bash
+gcc -Wall -o ep main2.c texto2.c indice_lista2.c
+```
 
-'gcc -Wall -o ep main2.c texto2.c indice_arvore2.c'
+### Árvore Binária
 
+Compile utilizando:
 
-Execução no terminal (obs: o arquivo deve ser de formato .txt):
+```bash
+gcc -Wall -o ep main2.c texto2.c indice_arvore2.c
+```
 
-'./ep <arquivo> <lista|arvore>'
+### Executando o programa
 
+Após a compilação, execute o programa passando o caminho do arquivo `.txt` e a estrutura de dados desejada:
 
-Utilização pós execução:
+```bash
+./ep <arquivo> <lista|arvore>
+```
 
-'busca <palavra>'
+### Comandos disponíveis
 
+Durante a execução, os seguintes comandos podem ser utilizados:
 
-Para finalizar o programa:
-
-'fim'
+| Comando | Descrição |
+|---|---|
+| `busca <palavra>` | Busca todas as ocorrências da palavra informada. |
+| `fim` | Encerra o programa. |
