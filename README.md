@@ -12,5 +12,7 @@ Lista Ligada:
   
 
 Árvore Binária:
+
   -Custo de Inserção: O(N.logN) pois, é necessário comparar N elementos com H elementos, sendo H a altura da árvore. Idealmente balanceada, a altura H tem logN elementos.
+  
   -Custo de Busca:  O(logN) pois, o número de comparações é igual à altura da árvore, e idealmente, H = logN.
