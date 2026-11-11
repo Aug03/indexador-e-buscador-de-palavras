@@ -40,9 +40,9 @@ Execução no terminal (obs: o arquivo deve ser de formato .txt):
 
 Utilização pós execução:
 
-> busca <palavra>
+busca <palavra>
 
 
 Para finalizar o programa:
 
-> fim
+fim
