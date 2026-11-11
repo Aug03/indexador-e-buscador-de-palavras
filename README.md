@@ -1,8 +1,8 @@
 # indexador-e-buscador-de-palavras
 É um indexador e um buscador de palavras escrito em C.
 
-Encontre o número de comparações feitas para buscar de uma palavra em um texto qualquer usando duas estruturas de dados diferentes para construir o índice: Lista ligada ou Árvore Binária. É possível, assim, testar empiricamente sua complexidade assintótica.
-Também obtenha o número de comparações realizadas para a inserção dos elementos em cada um dos índices, para comparar o custo de inserção.
+Encontre todas as ocorrências de uma palavra em um texto qualquer (em quais linhas ela apareceu e quantas vezes), além do número de comparações feitas para buscá-la, usando duas estruturas de dados diferentes para construir o índice remissivo: Lista ligada ou Árvore Binária. É possível, assim, testar empiricamente sua complexidade assintótica.
+Também obtenha o número de comparações realizadas para a inserção dos elementos em cada um dos índices, para comparar o custo de inserção. 
 
 Lista Ligada:
   -Custo de Inserção: O(N^2) pois, é necessário comparar N elementos com M já inseridos, para que não hajam elementos repetidos.
